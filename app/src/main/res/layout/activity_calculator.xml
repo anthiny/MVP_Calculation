@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_activity_calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.application.anthony.mvptest.CalculatorActivity"
+    >
+    <fragment android:name="com.application.anthony.mvptest.DisplayFragment"
+        android:id="@+id/frag_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/display_fragment"
+        />
+
+    <fragment
+        android:name="com.application.anthony.mvptest.InputFragment"
+        android:id="@+id/frag_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout="@layout/input_fragment"
+        android:layout_below="@+id/frag_display"
+        />
+
+</RelativeLayout>
