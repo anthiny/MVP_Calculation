@@ -2,6 +2,7 @@ package com.application.anthony.mvptest;
 
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import butterknife.OnLongClick;
 
 /**
  * Created by anthony on 2016. 11. 28..
@@ -32,10 +34,10 @@ public class DisplayFragment extends Fragment implements CalculatorContract.Publ
         forwardInteraction.onDeleteShortClick();
     }
 
-    @OnClick(R.id.imb_delete)
-    public void onDeleteLongClick(View v){
-
+    @OnLongClick(R.id.imb_delete)
+    public boolean onDeleteLongClick(View v){
         forwardInteraction.onDeleteLongClick();
+        return true;
     }
 
     public DisplayFragment(){

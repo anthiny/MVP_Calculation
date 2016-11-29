@@ -13,7 +13,7 @@ public class CalculatorPresenter implements CalculatorContract.ForwardDisplayInt
     public CalculatorPresenter (CalculatorContract.PublishToView publishResult){
         this.publishResult = publishResult;
         calc = new Calculation();
-        calc.setCaculationReusltListener(this);
+        calc.setCalculationResultListener(this);
     }
 
     @Override

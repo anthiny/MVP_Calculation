@@ -16,8 +16,8 @@ public class Calculation {
         void onExpressionChanged(String result, boolean successful);
     }
 
-    public void setCaculationReusltListener(CalculationResult caculationResult){
-        this.calculationResult = caculationResult;
+    public void setCalculationResultListener(CalculationResult calculationResult){
+        this.calculationResult = calculationResult;
         currentEXpression = "";
     }
 
